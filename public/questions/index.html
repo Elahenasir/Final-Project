@@ -28,7 +28,7 @@
         <h1>Questions</h1>
       </div>
       <div class="col-2">
-        <a href="new.html" class="btn btn-success">Add + </a>
+        <a href="new.html" class="btn btn-success">Add Question + </a>
       </div>
     </div>
     <div class="row">
@@ -37,6 +37,7 @@
           <thead>
             <tr>
               <th>#</th>
+              <th>Title</th>
             </tr>
           </thead>
           <tbody id="rows">
@@ -81,7 +82,6 @@
         const rows = data.questions.map(question => {
           return template(question);
         });
-
         $('#rows').html(rows.join());
       });
     })

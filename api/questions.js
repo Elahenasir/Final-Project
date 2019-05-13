@@ -18,7 +18,9 @@ router.get("/questions", function(req, res) {
         });
     });
 });
-// // (up function is showing all customers)
+
+
+// // // (up function is showing all customers)
 
 // router.get("/questions/:id", function(req, res) {
 //     let id = req.params.id;
@@ -51,21 +53,21 @@ router.get("/questions", function(req, res) {
 //     });
 // });
 //
-// router.post("/questions/", function(req, res) {
-//     const item = req.body;
-//
-//     const sql = `INSERT INTO questions (title) VALUES
-//   ("${ item.title}")`;
-//
-//     db.all(sql, [], (err, rows) => {
-//         if (err) {
-//             console.log("ERROR fetching from the database:", err);
-//             return;
-//         }
-//         console.log("Request succeeded, new data fetched", rows);
-//         res.sendStatus(200);
-//     });
-// });
+router.post("/questions/", function(req, res) {
+    const item = req.body;
+
+    const sql = `INSERT INTO questions (title) VALUES
+  ("${ item.title}")`;
+
+    db.all(sql, [], (err, rows) => {
+        if (err) {
+            console.log("ERROR fetching from the database:", err);
+            return;
+        }
+        console.log("Request succeeded, new data fetched", rows);
+        res.sendStatus(200);
+    });
+});
 //
 // router.put("/questions/:id", function(req, res) {
 //     let id = req.params.id;
