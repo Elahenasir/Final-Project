@@ -1,7 +1,7 @@
 const SERVER_PORT = process.env.PORT || 8080;
 
 const resetDataBase = require('./utils/db-tools');
-resetDataBase();
+//resetDataBase();
 
 const express = require("express");
 const exphbs = require("express-handlebars");
@@ -11,6 +11,7 @@ const apiRouter = require("./api");
 const http=require('http')
 const app = express();
 const router = express.Router();
+var cors = require('cors')
 
 
 app.engine(
@@ -29,7 +30,7 @@ app.use(express.static("assets"));
 app.use(bodyparser.json());
 
 app.use("/api", apiRouter);
-
+app.use(cors());
 app.get("/", function(req, res, next) {
   res.render("home");
 });
