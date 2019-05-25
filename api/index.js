@@ -1,10 +1,9 @@
 const express = require("express");
 const router = express.Router();
-// 
-const class2 = require("./class2");
 
 const questions = require("./questions");
-router.use("/", class2);
+const answers = require("./answers");
 router.use("/", questions);
+router.use("/", answers);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 const SERVER_PORT = process.env.PORT || 8080;
 
 const resetDataBase = require('./utils/db-tools');
-//resetDataBase();
+resetDataBase();
 
 const express = require("express");
 const exphbs = require("express-handlebars");

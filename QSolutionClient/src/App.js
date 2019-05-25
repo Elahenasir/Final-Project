@@ -6,6 +6,8 @@ import QuestionList from './components/QuestionList.js';
 import MainComponent from './components/MainComponent.js';
 import Login from './components/Login.js';
 import MainNavigation from './components/Navigation/MainNavigation.js';
+import QuestionAnswers from './components/QuestionAnswers.js';
+import AddAnswer from './components/AddAnswer.js';
 
 
 class App extends Component {
@@ -16,7 +18,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={MainComponent} />
               <Route exact path='/questions/add-question' component={AddQuestion} /> 
-              {/* <Route exact path='/questions/answers' component={AddQuestion} /> */}
+              <Route exact path='/questions/answers/:id' component={QuestionAnswers} />
+              <Route exact path='/questions/add-answer/:id' component={AddAnswer} />
                <Route exact path='/questions' component={QuestionList} />
                <Route exact path='/Login' component={Login} />
 

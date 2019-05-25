@@ -1,21 +1,4 @@
 
-CREATE TABLE IF NOT EXISTS questions (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  title varchar,
-  question_describe text,
-  created_by_date  datetime,
-  created_by_id integer ,
-   foreign key( created_by_id) references users(id)
-  );
-INSERT INTO questions
-(title,created_by_id)
-VALUES
-('Create a React app ',1);
-INSERT INTO questions
-(title,created_by_id)
-VALUES
-(' JavaScript arrays',1);
-
 
 CREATE TABLE  users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -31,15 +14,36 @@ INSERT INTO users
 VALUES 
 ( 'nasirelahe@gmail.com',1,1);
 
+CREATE TABLE IF NOT EXISTS questions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title varchar,
+  description text,
+  created_date  datetime,
+  created_by_id integer ,
+   foreign key( created_by_id) references users(id)
+  );
+INSERT INTO questions
+(title,description,created_date,created_by_id)
+VALUES
+('Create a React app ',"React tutorials",'2019-01-01 10:00:00',1);
+INSERT INTO questions
+(title,description,created_date,created_by_id)
+VALUES
+('Javascript ',"Step by step by raw javascript tutorials",'2019-02-02 23:15:32',1);
 create table answers (
   id integer primary key AUTOINCREMENT,
   question_id integer not null,
-  title text,
-  created_by_date datetime,
+  description text,
+  created_date datetime,
+    created_by_id integer ,
+   foreign key( created_by_id) references users(id),
   foreign key (question_id) references questions(id)
 );
 
 INSERT INTO answers 
-(title, created_by_date, question_id)
+(description, created_date, question_id,created_by_id)
 VALUES 
-('the first step is npm install', '2018-12-07', 1);
+('the first step is npm install', '2018-12-07', 1,1);
+INSERT INTO answers (question_id,description,created_date,created_by_id) VALUES
+  (1,'234234','2018-02-02',1)
+

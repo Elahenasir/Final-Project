@@ -18,9 +18,9 @@ return(
     <div>
       <a href='questions/add-question'>Add Question</a>
         
-<ol id="questions">
-{ this.state.questions.map(question => <li><a href={'questions/answers?id=' + question.id}>{question.title}</a></li>)}
-        		</ol></div>);
+<ul id="questions">
+{ this.state.questions.map(question => <li><a href={'/questions/answers/' + question.id}>{question.title + question.description}</a></li>)}
+        		</ul></div>);
     }
 }
 export default QuestionList;
