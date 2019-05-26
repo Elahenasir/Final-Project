@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import QuestionItem from './QuestionItem.js';
 import axios from 'axios';
+import './index.css'
 class QuestionList extends Component {
     state = {
         questions: []
@@ -16,11 +16,14 @@ class QuestionList extends Component {
     render() {
 return(
     <div>
-      <a href='questions/add-question'>Add Question</a>
-        
-<ul id="questions">
-{ this.state.questions.map(question => <li><a href={'/questions/answers/' + question.id}>{question.title + question.description}</a></li>)}
-        		</ul></div>);
+     <button type="button" className="btn btn-primary btn-lg"><a href='questions/add-question'>Add Question</a></button>
+        <br/>
+       
+       <table class="table table-sm">
+         <thead class="thead-dark" ><tr><th scope="col">All questions</th></tr></thead>
+{ this.state.questions.map(question =><tr><td><a href={'/questions/answers/' + question.id }>{question.title }</a></td></tr>)}
+</table>
+        		</div>);
     }
 }
 export default QuestionList;

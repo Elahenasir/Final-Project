@@ -1,0 +1,36 @@
+button{
+     float:left;
+     padding: 5px;
+     margin:5px;
+     background-color:rgb(52, 148, 243,.5)
+
+}
+button a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+button a:hover{
+    color:rgb(138, 97, 172);
+}
+a{
+    text-decoration: none; 
+}
+h3{
+    padding: 2px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }

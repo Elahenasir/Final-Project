@@ -4,9 +4,9 @@
     background-color:white;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	/* -webkit-animation: Gradient 15s ease infinite;
+	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite; */
+	animation: Gradient 15s ease infinite;
     background-repeat:no-repeat;
     background-position-x:center;
     background-attachment:fixed;
@@ -53,13 +53,6 @@
 margin:4rem 2.5rem;
 }
 
-.logo img{
-  float:right;
-    width:80px;
-     height:50px;
-     position:relative;
-  
-}
 .item{
 margin-left: 1.5rem;
 
@@ -78,34 +71,24 @@ margin-left: 1.5rem;
      width:80%;
      border-radius:5px;
     display:block;
-    background-color:#a2c331;
+    background-color:rgb(172, 97, 153);
    float:left;
    margin:5%;
    padding: 5px;
    
 }
 li a:hover{
-    color:#a2c331;
+    color:rgb(138, 97, 172);
 }
 
- ul li{
-
-     width:30%;
-        border-radius:5px;
-      display:block;
-    background-color:#a2c331;
-  float:left;
-   margin:2%;
-}
+ 
  
  .item li:hover{
     background-color:rgba(198, 194, 194,0.1);
     
 
 }
-/* .item li:hover .image{
-    opacity:0;
-} */
+
 a:visited{
     display:inline;;
      text-decoration:none;
