@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import './index.css'
 class AddAnswer extends Component {
     constructor(props) {
 
@@ -18,8 +18,7 @@ class AddAnswer extends Component {
       }
     
       handleSubmit(event) {
-        alert('A Answer was submitted: ' + this.state.description);
-        axios.post(`http://localhost:8080/api/answers/`,{description:this.state.description,question_id:this.state.question_id})
+          axios.post(`http://localhost:8080/api/answers/`,{description:this.state.description,question_id:this.state.question_id})
         .then(res => {
             window.location.href='../answers/' + this.state.question_id;
         })
@@ -38,7 +37,7 @@ class AddAnswer extends Component {
       <form onSubmit={this.handleSubmit}>
       <div>
           <div>Description</div>
-          <div><input type="text" id="txtDescription" name="txtDescription" required  value={this.state.description} onChange={this.handleChange}/></div>
+          <div><textarea  id="txtDescription"  class="form-control" required  value={this.state.description} onChange={this.handleChange}/></div>
         </div>
         <div>
           <button id="btnInsert">Submit</button>

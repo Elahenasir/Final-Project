@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an Question and Answer app with React,Node.js and Sqlite.
 
-## Available Scripts
 
-In the project directory, you can run:
+## SETUP
 
-### `npm start`
+In the project , you can run:
+$ npm install 
+$ npm start # start backend application on localhost:8080
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For starting React server at port 3000
+$ cd QSolutionClient
+$ npm start
+ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+User Stories:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When a user enter app the first step is:
+1. Sing in  (is first step that users can sign in  with their Email)
 
-### `npm run build`
+2. Question Page (to access the question page user can click on Questions in navbar)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+(THERE IS AN ASK QUESTION BUTTON AND A LIST OF ALL QUESTIONS THAT USERS ASKED BEFORE)
+  2.1. List of all questions that may includes user's answer
+     2.2. If user could find his/her answer in list of questions,he/she can click on it and see the Answers that users answerd it before.
+     
+3. Ask question button (user can click on button to enter title and description of question and title of question will add to questions list automatically)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+4. Submit Your Answer button in Answers page (Every user can asks question and also answers others' questions) 
+  4.1. For answer question,user can click on title of question in list of all questions and click on Submit Your Answer button,user can write answer on description
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

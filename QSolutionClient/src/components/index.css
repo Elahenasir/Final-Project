@@ -1,3 +1,4 @@
+
 button{
      float:left;
      padding: 5px;
@@ -5,15 +6,21 @@ button{
      background-color:rgb(52, 148, 243,.5)
 
 }
-button a{
+
+ a:hover{
+    color: rgba(191, 129, 241,1);
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-button a:hover{
-    color:rgb(138, 97, 172);
 }
 a{
     text-decoration: none; 
+    color: rgb(76, 9, 107);
+    
+}
+
+button a{
+  text-decoration: none; 
+  color: rgb(76, 9, 107);
+font-family: Arial, Helvetica, sans-serif;  
 }
 h3{
     padding: 2px;
@@ -27,10 +34,75 @@ ul {
     border-collapse: collapse;
     width: 100%;
   }
-  
-  
+    .TH{
+    background-color: rgba(161, 77, 230, 0.5);
+    color: rgb(76, 9, 107);
+  }
+  #BTN{
+    background-color:  rgba(161, 77, 230, 0.5);
+        border:1px solid rgb(76, 9, 107);
+  }
 th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+  }
+  /* login page css */
+  /* .login-form{ */
+    /* width: 25rem;
+    max-width: 80%;
+    margin: 5rem auto;
+} */
+/* .form-control label,
+form-control input{
+    width: 100%;
+    display: block;
+} */
+.main{
+  margin:0;
+  padding: 0;
+  background-color: rgba(247, 129, 247, 0.295);
+}
+
+.column{
+  border:1px solid rgb(126, 60, 126,0.5);
+  width: 23%;
+  margin-left:15px;
+  padding: 5px;
+  text-align: center;
+
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea.form-control {
+  height: 150px;
+  width: 600px;
+  }
+  #txtTitle{
+    height:50px;
+    width:600px;
+  }
+  .BTN{
+    background-color:  rgba(161, 77, 230, 0.5);
+        border:1px solid rgb(76, 9, 107);
+        text-decoration: none; 
+        color: rgb(76, 9, 107);
+      font-family: Arial, Helvetica, sans-serif;   
+  }
+  .FRM{
+margin:20px;
+padding: 5px;
   }

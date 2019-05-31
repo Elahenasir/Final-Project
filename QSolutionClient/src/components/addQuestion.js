@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './index.css'
+import Button from 'react-bootstrap/Button';
+
 
 class AddQuestion extends Component {
     constructor(props) {
@@ -22,7 +25,6 @@ class AddQuestion extends Component {
       }
     
       handleSubmit(event) {
-        alert('A question was submitted: ' + this.state.title);
         axios.post(`http://localhost:8080/api/questions/`,{title:this.state.title,description:this.state.description})
         .then(res => {
             window.location.href='./';
@@ -35,7 +37,8 @@ class AddQuestion extends Component {
 <div>
     <div>
       <div>
-        <h1>Insert New Question</h1>
+        <h3>Insert New Question</h3>
+        <hr/>
       </div>
     </div>
     <div>
@@ -47,11 +50,11 @@ class AddQuestion extends Component {
             </div>
             <div>Description</div>
           <div>
-            <input type="text" id="txtDescription" name="txtDescription" required  value={this.state.description} onChange={this.handleDescriptionChange}/>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" required  value={this.state.description} onChange={this.handleDescriptionChange}/>
             </div>
         </div>
         <div>
-          <button id="btnInsert">Insert</button>
+          <button  id="btnInsert">Insert</button>
         </div>
       </form>
     </div>

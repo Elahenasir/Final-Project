@@ -25,11 +25,11 @@ CREATE TABLE IF NOT EXISTS questions (
 INSERT INTO questions
 (title,description,created_date,created_by_id)
 VALUES
-('Create a React app ',"React tutorials",'2019-01-01 10:00:00',1);
+('What is the first step of Create a React app ',"Get Started Immediately. You don't need to install or configure tools like Webpack or Babel.",'2019-01-01 10:00:00',1);
 INSERT INTO questions
 (title,description,created_date,created_by_id)
 VALUES
-('Javascript ',"Step by step by raw javascript tutorials",'2019-02-02 23:15:32',1);
+('How I can create a server in Node.js '," Create a project folder. First, create a folder using the following command",'2019-02-02 23:15:32',1);
 create table answers (
   id integer primary key AUTOINCREMENT,
   question_id integer not null,

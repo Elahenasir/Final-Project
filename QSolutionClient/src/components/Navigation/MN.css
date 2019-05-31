@@ -4,9 +4,9 @@
     background-color:white;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
+	 -webkit-animation: Gradient 15s ease infinite; 
 	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite; 
     background-repeat:no-repeat;
     background-position-x:center;
     background-attachment:fixed;
@@ -78,7 +78,7 @@ margin-left: 1.5rem;
    
 }
 li a:hover{
-    color:rgb(138, 97, 172);
+	color:rgb(138, 97, 172);
 }
 
  

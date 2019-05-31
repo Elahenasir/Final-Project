@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import './login.css';
+import './index.css';
+import {Form,Col,Row,Button} from 'react-bootstrap'
 
 class Login extends Component {
 render(){
     return(
-        <form className='login-form'>
-            <div className='form-control'>
-                <label htmlFor='email'>E-Mail</label>
-                <input type='email' id='email'/>
-            </div>
-            <div className='form-action'>
-                
-                <button type='button'>Signup</button>
-            </div>     
-     </form>
+        <Form   classname='login-form'>
+  <Form.Group controlId="formGroupEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email"  />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
     )
 }
 }
