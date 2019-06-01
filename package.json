@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon --watch ./ -e js,sql,json",
     "generate-data": "node assets/data/generate.js",
-    "db-reset": "node db-reset.js"
+    "db-reset": "node db-reset.js",
+    "heroku-postbuild": "cd QSolutionClient && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
