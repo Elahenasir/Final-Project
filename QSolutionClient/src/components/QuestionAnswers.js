@@ -8,9 +8,10 @@ class QuestionAnswers extends Component {
         answers: []
 
       }
+      // http://localhost:8080
     componentDidMount() {
         var id = this.props.match.params.id;
-        axios.get(`http://localhost:8080/api/questions/`+ id)
+        axios.get(`/api/questions/`+ id)
           .then(res => {
             const question = res.data.questions[0];
             const answers = res.data.answers;

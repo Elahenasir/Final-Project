@@ -6,7 +6,7 @@ class QuestionList extends Component {
         questions: []
       }
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/questions/`)
+        axios.get(`/api/questions/`)
           .then(res => {
             const questions = res.data.questions;
             this.setState({ questions });
