@@ -18,7 +18,7 @@ class AddAnswer extends Component {
       }
     
       handleSubmit(event) {
-          axios.post(`http://localhost:8080/api/answers/`,{description:this.state.description,question_id:this.state.question_id})
+          axios.post(`/api/answers/`,{description:this.state.description,question_id:this.state.question_id})
         .then(res => {
             window.location.href='../answers/' + this.state.question_id;
         })
