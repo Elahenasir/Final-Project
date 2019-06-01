@@ -1,9 +1,13 @@
 #Final-Project
-This project is an Question and Answer app with React,Node.js and Sqlite.
+This project is an Question and Answer app with React,Node.js and Sqlite. 
+
 SETUP
 In the project , you can run: $ npm install $ npm start # start backend application on localhost:8080
+
 For starting React server at port 3000 $ cd QSolutionClient $ npm start Open http://localhost:3000 to view it in the browser.
+
 User Stories:
+
 When a user enter app the first step is:
 1.	Sing in (is first step users can sign in with their Email)
 2.	Question Page (to access the questions page user can click on Questions in navbar)
